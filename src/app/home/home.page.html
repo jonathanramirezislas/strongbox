@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button expand="full" color="primary" (click)="connect()">Conectar</ion-button>
+
+<ion-button expand="full" color="success" (click)="OpenDoor()">
+  <ion-icon name="arrow-dropup-circle"></ion-icon>
+  Abrir</ion-button>
+<ion-button expand="full" color="medium" (click)="CloseClose()">
+<ion-icon name="arrow-dropdown-circle"></ion-icon>
+  Cerrar</ion-button>
+<ion-button expand="full" color="danger" (click)="desconnect()">Cerrar conexion</ion-button>
+<ion-button expand="full" color="warning" (click)="gomovimientos()">
+<ion-icon name="list-box"></ion-icon>
+  Movimientos</ion-button>
+<ion-button expand="full" color="primary" (click)="Ajustes()">
+<ion-icon name="cog"></ion-icon>
+  Ajustes de perfil</ion-button>
+  <ion-button expand="full" color="primary" (click)="
+  Cerrarsesion()">
+    Cerrar sesion</ion-button>
+
+
+
+    <ion-list >
+
+        <ion-item  >
+
+
+          <ion-grid  >
+            <ion-row *ngFor="let device of lists">
+              <ion-col>
+             {{device.name}}
+              </ion-col>
+              <ion-col>
+                  {{device.id}}
+              </ion-col>
+
+
+            </ion-row>
+    </ion-grid>
+
+        </ion-item>
+
+
+   </ion-list>
+
+</ion-content>

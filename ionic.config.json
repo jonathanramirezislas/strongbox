@@ -1,0 +1,7 @@
+{
+  "name": "StrongBox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

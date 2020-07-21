@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mismovimientos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+
+
+     <ion-card *ngFor="let caja of historia">
+  <ion-card-header>
+    <ion-card-subtitle>Movimiento</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <h2>{{caja.nombre}}</h2><hr>
+
+    <div *ngIf=" caja.operacion == 1">
+      <h5>Abrio la caja {{caja.cajafuerte}}</h5><hr>
+    </div>
+    <div *ngIf=" caja.operacion == 0">
+      <h5>Cerro la caja {{caja.cajafuerte}}</h5><hr>
+    </div>
+    <h2> En el cuarto {{caja.cuarto}}</h2><hr>
+    <h2> En del piso {{caja.piso}}</h2><hr>
+    <h2> Al la fecha y hora {{caja.fecha}}</h2><hr>
+  </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
