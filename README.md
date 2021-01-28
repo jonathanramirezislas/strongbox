@@ -3,7 +3,7 @@
 ## 🎬 Video
 [Video](https://mailita-my.sharepoint.com/:v:/g/personal/hmacias_aguascalientes_tecnm_mx/EcmmSSkTYaZKmq_7HMSLydUB61VX8w4MtlS3t-9n0FA1aQ?e=Uv0oy6)
 
-Heroes is a app to find your favorite hero.
+Strongbox is a app that works with a safe in order to control it.
 
 ## 📢 Requirements
 - Node JS 12.16.1 _(Recommended)_
